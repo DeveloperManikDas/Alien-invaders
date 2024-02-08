@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-color: black;
+}
+#result{
+    margin-bottom: 20px;
+}
+#score{
+    color: rgb(6, 179, 179);
+}
+.board {
+    display: grid;
+    grid-template-rows: repeat(15, 30px);
+    grid-template-columns: repeat(15, 30px);
+    border: 10px solid rgb(109, 4, 4);
+}
+
+.inveder {
+    background-color: purple;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shooter {
+    background-color: rgb(0, 76, 255);
+}
+
+.laser{
+    background-color: yellow;
+}
+.boom{
+    background: red;
+    border-radius: 50%;
+} 
