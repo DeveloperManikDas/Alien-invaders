@@ -109,14 +109,14 @@ function automoveInveders() {
 //  check for collision
 function checkCollision() {
   if (cells[currentShooterPosition].classList.contains("inveder")) {
-    result.innerHTML = "You Fucked Up  !!!   Game Over!";
+    result.innerHTML = "You messed Up  !!!   Game Over!";
     clearInterval(automoveTimer);
   }
   const deadline = Array.from(document.querySelectorAll(".deadline"));
 
   deadline.forEach((dead) => {
     if (dead.classList.contains("inveder")) {
-      result.innerHTML = "You Fucked Up  !!!   Game Over!";
+      result.innerHTML = "You Messed Up  !!!   Game Over!";
       clearInterval(automoveTimer);
     }
   });
